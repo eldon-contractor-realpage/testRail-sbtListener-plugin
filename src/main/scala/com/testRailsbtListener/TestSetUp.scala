@@ -17,15 +17,15 @@ object TestSetUp {
 
     if (ConfigurationHelper.isEnabled("automation.testrail.api")) {
 
-      val testRailUsername = ConfigurationHelper.getProperty("automation.testrail.username", "eldon.umphrey@atginfo.com")
+      val testRailUsername = ConfigurationHelper.getProperty("automation.testrail.username", "")
 
       ConfigurationHelper.setPropertyIfEmpty("automation.testrail.username", testRailUsername)
 
-      val testRailPassword = ConfigurationHelper.getProperty("automation.testrail.password", "TestRailP@55")
+      val testRailPassword = ConfigurationHelper.getProperty("automation.testrail.password", "")
 
       ConfigurationHelper.setPropertyIfEmpty("automation.testrail.password", testRailPassword)
 
-      val testRailUrl = ConfigurationHelper.getProperty("automation.testrail.url", "https://atg.testrail.com/")
+      val testRailUrl = ConfigurationHelper.getProperty("automation.testrail.url", "")
 
       ConfigurationHelper.setPropertyIfEmpty("automation.testrail.url", testRailUrl)
 

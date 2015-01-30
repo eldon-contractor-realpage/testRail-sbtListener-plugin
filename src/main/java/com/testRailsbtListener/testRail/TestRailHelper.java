@@ -33,9 +33,9 @@ public class TestRailHelper implements Serializable {
     }
 
     public void authenticate(String username, String password, String url) {
-        client = new APIClient(url); // "https://atg.testrail.com/"
-        client.setUser(username); // "eldon.umphrey@atginfo.com"
-        client.setPassword(password); // "TestRailP@55"
+        client = new APIClient(url);
+        client.setUser(username);
+        client.setPassword(password);
     }
 
     public JSONObject createRun(Integer projectId, Map<String, Object> data)
